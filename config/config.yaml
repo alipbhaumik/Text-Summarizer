@@ -1,0 +1,14 @@
+#Creating a folder called artifacts
+#All the components will be saved inside my artifacts
+
+artifacts_root: artifacts
+
+data_ingestion:
+  #Creating a subfolder called data_ingestion
+  root_dir: artifacts/data_ingestion
+  #Defining the link from which data is to be downloaded
+  source_URL: https://github.com/alipbhaumik/Text-Summarizer/raw/main/samsum%20data.zip
+  #After downloading data will be stored in the below file
+  local_data_file: artifacts/data_ingestion/data.zip
+  #After unzipping data will be stored in data_ingestion subfolder itself
+  unzip_dir: artifacts/data_ingestion
