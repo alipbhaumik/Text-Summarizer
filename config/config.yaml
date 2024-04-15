@@ -12,3 +12,13 @@ data_ingestion:
   local_data_file: artifacts/data_ingestion/data.zip
   #After unzipping data will be stored in data_ingestion subfolder itself
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  #Creating a subfolder called data_validation inside artifacts
+  #Inside that it will save all the  validations related artifacts
+  #It will create a status.txt file and check if train,test,validation is available or not.
+  
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train","test","validation"]
+
